@@ -1,6 +1,6 @@
 {
   "name": "generator-lg",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "generator-lg",
   "homepage": "https://github.com/liubiao0810/generator-lg",
   "author": {
@@ -47,5 +47,5 @@
     "prepublish": "gulp prepublish",
     "test": "gulp"
   },
-  "license": "Apache-2.0"
+  "license": "MIT"
 }
