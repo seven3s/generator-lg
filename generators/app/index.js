@@ -7,7 +7,7 @@ module.exports = yeoman.Base.extend({
   prompting: function () {
     // Have Yeoman greet the user.
     this.log(yosay(
-      'Welcome to the luminous ' + chalk.red('generator-l3g') + ' generator!'
+      'Welcome to the luminous ' + chalk.red('generator-lg') + ' generator!'
     ));
 
     var prompts = [{
