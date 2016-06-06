@@ -1,19 +1,19 @@
-# generator-l-3-g [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-> generator-l3g
+# generator-lg [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+> 
 
 ## Installation
 
-First, install [Yeoman](http://yeoman.io) and generator-l-3-g using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+First, install [Yeoman](http://yeoman.io) and generator-lg using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
 ```bash
 npm install -g yo
-npm install -g generator-l-3-g
+npm install -g generator-lg
 ```
 
 Then generate your new project:
 
 ```bash
-yo l-3-g
+yo lg
 ```
 
 ## Getting To Know Yeoman
@@ -25,14 +25,14 @@ yo l-3-g
 
 ## License
 
-MIT © [花夏](fex.onlove.cc)
+Apache-2.0 © [花夏](fex.onlove.cc)
 
 
-[npm-image]: https://badge.fury.io/js/generator-l-3-g.svg
-[npm-url]: https://npmjs.org/package/generator-l-3-g
-[travis-image]: https://travis-ci.org/liubiao0810@live.cn/generator-l-3-g.svg?branch=master
-[travis-url]: https://travis-ci.org/liubiao0810@live.cn/generator-l-3-g
-[daviddm-image]: https://david-dm.org/liubiao0810@live.cn/generator-l-3-g.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/liubiao0810@live.cn/generator-l-3-g
-[coveralls-image]: https://coveralls.io/repos/liubiao0810@live.cn/generator-l-3-g/badge.svg
-[coveralls-url]: https://coveralls.io/r/liubiao0810@live.cn/generator-l-3-g
+[npm-image]: https://badge.fury.io/js/generator-lg.svg
+[npm-url]: https://npmjs.org/package/generator-lg
+[travis-image]: https://travis-ci.org/liubiao0810@live.cn/generator-lg.svg?branch=master
+[travis-url]: https://travis-ci.org/liubiao0810@live.cn/generator-lg
+[daviddm-image]: https://david-dm.org/liubiao0810@live.cn/generator-lg.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/liubiao0810@live.cn/generator-lg
+[coveralls-image]: https://coveralls.io/repos/liubiao0810@live.cn/generator-lg/badge.svg
+[coveralls-url]: https://coveralls.io/r/liubiao0810@live.cn/generator-lg

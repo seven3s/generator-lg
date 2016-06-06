@@ -1,8 +1,8 @@
 {
-  "name": "generator-l-3-g",
+  "name": "generator-lg",
   "version": "0.0.0",
-  "description": "generator-l3g",
-  "homepage": "https://github.com/liubiao0810/generator-l3g",
+  "description": "",
+  "homepage": "https://github.com/liubiao0810/generator-lg",
   "author": {
     "name": "花夏",
     "email": "liubiao@itoxs.com",
@@ -47,5 +47,5 @@
     "prepublish": "gulp prepublish",
     "test": "gulp"
   },
-  "license": "MIT"
+  "license": "Apache-2.0"
 }
