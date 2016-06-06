@@ -1,7 +1,7 @@
 {
   "name": "generator-lg",
   "version": "0.0.0",
-  "description": "",
+  "description": "generator-lg",
   "homepage": "https://github.com/liubiao0810/generator-lg",
   "author": {
     "name": "花夏",
@@ -13,7 +13,7 @@
   ],
   "main": "generators/index.js",
   "keywords": [
-    "fex",
+    "generator-lg",
     "yeoman-generator"
   ],
   "dependencies": {
@@ -47,5 +47,5 @@
     "prepublish": "gulp prepublish",
     "test": "gulp"
   },
-  "license": "Apache-2.0"
+  "license": "MIT"
 }
