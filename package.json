@@ -1,11 +1,7 @@
 {
   "name": "generator-lg",
   "version": "0.0.0",
-<<<<<<< HEAD
-  "description": "",
-=======
   "description": "generator-lg",
->>>>>>> master
   "homepage": "https://github.com/liubiao0810/generator-lg",
   "author": {
     "name": "花夏",
@@ -46,7 +42,7 @@
       "mocha": true
     }
   },
-  "repository": "https://github.com/liubiao0810/nodeWeb",
+  "repository": "https://github.com/liubiao0810/generator-lg",
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"
