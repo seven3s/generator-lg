@@ -1,9 +1,5 @@
 # generator-lg [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-<<<<<<< HEAD
-> 
-=======
 > generator-lg
->>>>>>> master
 
 ## Installation
 
@@ -29,7 +25,7 @@ yo lg
 
 ## License
 
-Apache-2.0 © [花夏](fex.onlove.cc)
+MIT © [花夏](fex.onlove.cc)
 
 
 [npm-image]: https://badge.fury.io/js/generator-lg.svg
