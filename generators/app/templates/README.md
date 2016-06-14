@@ -1,4 +1,4 @@
-# generator-l3g 脚手架（beta版）
+# generator-lg 脚手架（beta版）
 命名：前朱雀为陵光,后玄武为执名,左青龙为孟章,右白虎为咸池
 第一组开源项目统一用`lg(陵光，朱雀)`命名 （一个l  3个g  lingguang  名字而来）
 

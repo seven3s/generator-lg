@@ -1,5 +1,9 @@
 # generator-lg [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 
+# generator-lg 脚手架（beta版）
+命名：前朱雀为陵光,后玄武为执名,左青龙为孟章,右白虎为咸池
+第一组开源项目统一用`lg(陵光，朱雀)`
+
 > generator-lg
 
 ## Installation
