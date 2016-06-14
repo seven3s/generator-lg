@@ -7,10 +7,10 @@
 var gulp = require('gulp');
 var path = require('path');
 var watch = require('gulp-watch');
-
+var config = require('./');
 gulp.task('watch', function () {
-    var html = path.join(__dirname, '../../src/**/*');
-    watch(html, function () {
+    var file = config.sourceDirectory + '/**/*';
+    watch(file, function () {
         gulp.start('build');
     });
 });

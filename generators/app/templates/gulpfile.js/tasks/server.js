@@ -4,9 +4,10 @@
  * @Version:   V0.0.1
  * @Date:      2016-05-31 18:30:57
  */
-var gulp     = require('gulp');
+var gulp = require('gulp');
+var config = require('./');
 gulp.task('server', ['build'], function () {
     var app = require('lg-server');
-    var static_dir = './dist/';
+    var static_dir = config.distPath;
     app.createServer(static_dir);
 });

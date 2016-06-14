@@ -6,9 +6,9 @@
  */
 var gulp = require('gulp');
 var del = require('del');
-
+var config = require('./');
 gulp.task('clean', function (cb) {
     return del([
-        './dist/**/*'
+        config.publicDirectory
     ], cb);
 });
