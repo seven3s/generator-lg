@@ -19,7 +19,7 @@
     "gulp-watch": "^4.3.6",
     "html-loader": "^0.4.3",
     "jquery": "^2.2.4",
-    "lg-server": "^1.1.1",
+    "lg-server": "^1.1.2",
     "require-dir": "^0.3.0",
     "style-loader": "^0.13.1",
     "vue": "^1.0.24",
