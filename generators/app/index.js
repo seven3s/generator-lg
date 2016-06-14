@@ -6,18 +6,59 @@
  */
 
 // 'use strict';
-var yeoman = require('yeoman-generator');
+var generators = require('yeoman-generator');
+// var yosay = require('yosay');
 var chalk = require('chalk');
-var yosay = require('yosay');
 var path = require('path');
 var fs = require('fs');
-module.exports = yeoman.Base.extend({
+var logo = require('../../h/logo').LGLogo;
+module.exports = generators.Base.extend({
     /**
      * constructor 构造函数
      *
      */
     constructor: function() {
+        // 调用父类构造函数
+        generators.Base.apply(this, arguments);
+        // 读取json文件并转换为JSON格式存起来
+        this.pkg = JSON.parse(fs.readFileSync(path.join(__dirname, '../../package.json'), 'utf8'));
+        this.log(logo(this));
+        this.directory('gulpfile.js', 'gulpfile.js');
+        this.directory('src', 'src');
+        this.copy('README.md', 'README.md');
+        this.copy('webpack.config.js', 'webpack.config.js');
+        this.on('error', function (err) {
+            console.log('err:', err);
+        });
+        this.on('end', function () {
+            var cb = this.async();
+            this.prompt([
+                {
+                    'name'   : 'npm_install',
+                    'message': 'Install node_modules for gulp now?',
+                    'default': 'N/y',
+                    'warning': ''
+                }
+            ], function (props) {
 
+                this.isNpmInstall = (/^y/i).test(props.npm_install);
+                if (this.isNpmInstall) {
+                    this.npmInstall('', {}, function (err) {
+
+                        if (err) {
+                            return this.log('\n' + chalk.red('please run "sudo npm install"\n'));
+                        }
+
+                        console.log(chalk.green('\n\nnpm was installed successful. \n\n'));
+                    });
+                } else {
+                    console.log(chalk.red('\n\nplease run "npm install" before gulp\n'));
+                    console.log(chalk.green('\ndone!\n'));
+                }
+                cb();
+            }.bind(this));
+
+        }.bind(this));
     },
     prompting: function() {
         // Have LG greet the user.
@@ -48,31 +89,37 @@ module.exports = yeoman.Base.extend({
             'message': 'Author Email:',
             'default': curUserEmail,
             'warning': ''
-        }, {
+        },
+        {
+            type: 'list',
+            name: 'License',
+            message: 'Please choose license:',
+            choices: ['MIT', 'ISC', 'Apache-2.0', 'AGPL-3.0']
+        },{
             'type': 'input',
             'name': 'isSupportGit',
             'message': '是否支持git?',
             'default': 'Y/n'
         }];
+        // 当处理完用户输入需要进入下一个生命周期阶段时必须调用这个方法
         var done = this.async();
         this.prompt(prompts, function (props) {
             this.packageName = props.projectName;
             this.version = props.version;
             this.author = props.author;
             this.email = props.email;
+            this.License = props.License;
             this.isSupportGit = /^y/i.test(props.isSupportGit);
             done();
         }.bind(this));
     },
-
-    writing: function() {
-        this.fs.copy(
-            this.templatePath('dummyfile.txt'),
-            this.destinationPath('dummyfile.txt')
-        );
+    packageJSON: function () {
+        this.template('package.json', 'package.json');
     },
 
-    install: function() {
-        this.installDependencies();
+    supportGit: function () {
+        if (this.isSupportGit) {
+            this.copy('_gitignore', '.gitignore');
+        }
     }
 });
