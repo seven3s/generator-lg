@@ -34,7 +34,13 @@ router.map({
     }
 });
 ```
-
 这里面添加需要的路由配置;
+##### 本地mock：
+ gulpfile.js > tasks > server.js > 
+修改： 
+// 本地模拟数据和远程服务器数据切换, 1:本地   0:远程服务器
+var mockLocal = 1;
 
+get请求：src > mock > GET > 建立对应地址的文件夹，最深层文件夹里新建：index.json   json文件就是写要mock的数据
+对于post请求，同上...
 todo...

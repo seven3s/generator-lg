@@ -20,7 +20,9 @@ Then generate your new project:
 ```bash
 yo lg
 ```
-
+```
+目录生成成功后，请阅读：README.md
+```
 ## Getting To Know Yeoman
 
  * Yeoman has a heart of gold.

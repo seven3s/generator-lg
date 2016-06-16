@@ -1,11 +1,12 @@
 {
-  "name": "test",
-  "version": "0.1.0",
+  "name": "<%= packageName %>",
+  "version": "<%= version %>",
   "description": " a LG project",
-  "author": "花夏",
+  "author": "<%= author %>",
+  "email": "<%= email %>",
   "keywords": [
     "lg",
-    "test"
+    "<%= packageName %>"
   ],
   "main": "index.js",
   "dependencies": {
@@ -30,5 +31,5 @@
     "start": "node ./index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "license": "MIT"
+  "license": "<%= License %>"
 }
