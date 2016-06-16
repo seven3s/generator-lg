@@ -7,7 +7,6 @@
 var path = require('path');
 var config = {};
 var base = path.join(__dirname, '../../');
-
 config.basePath = '';
 config.distPath = 'dist';
 config.publicDirectory = base + config.distPath + '/' + config.basePath;

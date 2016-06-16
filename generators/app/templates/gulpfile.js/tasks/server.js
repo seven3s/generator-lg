@@ -6,8 +6,17 @@
  */
 var gulp = require('gulp');
 var config = require('./');
+var mock = require('../lib/mockLocal');
 gulp.task('server', ['build'], function () {
     var app = require('lg-server');
     var static_dir = config.distPath;
-    app.createServer(static_dir);
+    // 本地模拟数据和远程服务器数据切换, 1:本地   0:远程服务器
+    var mockLocal = 1;
+    var cab = null;
+    if (mockLocal) {
+        cab = function (req, res) {
+            mock.mockLocal(req, res);
+        }
+    }
+    app.createServer(static_dir, cab);
 });

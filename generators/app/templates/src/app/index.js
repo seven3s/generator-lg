@@ -6,7 +6,7 @@
  */
 var Vue = require('vue');
 var VueRouter = require('vue-router');
-
+window.$ = window.jQuery = require('jquery');
 require('./index.css');
 Vue.use(VueRouter);
 var router = new VueRouter({
@@ -15,6 +15,4 @@ var router = new VueRouter({
 var route = require('./router-config');
 router.map(route);
 router.start({}, '#app');
-
-window.$ = window.jQuery = require('jquery');
 module.exports = app;
