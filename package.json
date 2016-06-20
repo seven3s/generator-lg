@@ -1,6 +1,6 @@
 {
   "name": "generator-lg",
-  "version": "0.1.2",
+  "version": "0.1.7",
   "description": "generator-lg",
   "homepage": "https://github.com/liubiao0810/generator-lg",
   "author": {
@@ -9,7 +9,8 @@
     "url": "fex.onlove.cc"
   },
   "files": [
-    "generators/app"
+    "generators/app",
+    "h"
   ],
   "main": "generators/app/index.js",
   "keywords": [

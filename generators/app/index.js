@@ -11,7 +11,7 @@ var generators = require('yeoman-generator');
 var chalk = require('chalk');
 var path = require('path');
 var fs = require('fs');
-var logo = require('./h/logo').LGLogo;
+var logo = require('../../h/logo').LGLogo;
 module.exports = generators.Base.extend({
     /**
      * constructor 构造函数
