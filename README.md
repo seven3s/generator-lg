@@ -21,7 +21,7 @@ Then generate your new project:
 yo lg
 ```
 ```
-目录生成成功后，请阅读：(README.md)[https://github.com/liubiao0810/generator-lg/blob/dev/generators/app/templates/README.md]
+目录生成成功后，请阅读：[README.md](https://github.com/liubiao0810/generator-lg/blob/dev/generators/app/templates/README.md)
 ```
 ## Getting To Know Yeoman
 
