@@ -4,7 +4,6 @@
  * @Version:   V0.0.1
  * @Date:      2016-06-06 23:54:35
  */
-
 // 'use strict';
 var generators = require('yeoman-generator');
 // var yosay = require('yosay');

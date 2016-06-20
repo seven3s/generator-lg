@@ -4,7 +4,6 @@ var fs = require('fs');
 var process = require('process');
 var generators = require('yeoman-generator');
 var logo = require('../h/logo').LGLogo;
-
 module.exports = generators.Base.extend({
     constructor: function () {
         generators.Base.apply(this, arguments);

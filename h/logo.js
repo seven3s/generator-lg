@@ -6,7 +6,6 @@
  */
 
 var chalk = require('chalk');
-
 function LGLogo(contex) {
     var version = '';
     try{
