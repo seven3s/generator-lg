@@ -21,6 +21,39 @@ Then generate your new project:
 yo lg
 ```
 目录生成成功后，请阅读：[README.md](https://github.com/liubiao0810/generator-lg/blob/dev/generators/app/templates/README.md)
+
+项目架子初始化完成（注意：这时只有index示例页面）,目录结构如下：
+
+    test
+        ├── .gitignore
+        ├── README.md
+        ├── package.json
+        ├── dist/
+        ├── gulpfile.js
+        └── src/
+            ├── app/
+            |   ├──example
+            |   |  ├──index.tpl.html
+            |   |  ├──index.css
+            |   |  ├──index.js
+            │   ├── config-router.js
+            │   ├── index.css
+            │   ├── index.html
+            │   └── index.js
+            ├── asset/
+            │   └── img
+            └── mock/
+                |── GET/
+                └── POST/
+
+## 感谢这些开源项目
+
+1. [gulp](http://gulpjs.com/)
+2. [yeoman](http://yeomanjs.org/)
+3. [Stylus](http://stylus-lang.com/)
+4. [Vue.js](http://vuejs.org/)
+5. [webpack](https://webpack.github.io/)
+
 ## Getting To Know Yeoman
 
  * Yeoman has a heart of gold.

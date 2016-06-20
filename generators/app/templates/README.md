@@ -3,11 +3,11 @@
 第一组开源项目统一用`lg(陵光，朱雀)`命名 （一个l  3个g  lingguang  名字而来）
 
 
-## Vue.js + Webpack + gulp
+## [Vue.js](http://cn.vuejs.org/) + Webpack + gulp
 
     1.打包工具：webpack
     2.自动化构建工具：gulp
-    3.SPA框架：vue
+    3.SPA框架：vue(项目主要应用框架)
 ## 步骤
     
     1.进入当前目录;
@@ -18,7 +18,7 @@
 
     3.gulp 或者  gulp server 
       
-      (如果提示node模块为安装，那么手动安装对应的模块即可)
+      (如果提示node模块未安装，那么手动安装对应的模块即可)
 
 
 ## 关于配置
@@ -46,7 +46,7 @@ mockLocal: 1;
 // 远程服务地址以及可能需要的cookie配置
 ```
     remote: {
-        path: '10.100.12:8080', // 可以是具体ip地址\具体域名地址
+        path: '10.10.0.12:8080', // 可以是具体ip地址\具体域名地址
         headers: {
             cookie: 'cookie_user_key=xxxx' // 登陆的用户名==
         }
@@ -55,4 +55,5 @@ mockLocal: 1;
 ###### ajax请求
 get请求：src > mock > GET > 建立对应地址的文件夹，最深层文件夹里新建：index.json   json文件就是写要mock的数据
 对于post请求，同上...
+
 todo...

@@ -28,7 +28,7 @@ module.exports = {
     },
     resolve: {
         extensions: ['', '.js'],
-        modulesDirectories: ['web_modules', 'node_modules', 'node_modules/VueFrame', './web'],
+        modulesDirectories: ['web_modules', 'node_modules'],
         alias: {
             vue: path.join(__dirname, './node_modules/vue'),
             vueRouter: path.join(__dirname, './vue-router')
