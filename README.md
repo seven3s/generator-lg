@@ -11,8 +11,8 @@
 First, install [Yeoman](http://yeoman.io) and generator-lg using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
 ```bash
-sudo npm install -g yo
-sudo npm install -g generator-lg
+[sudo] npm install -g yo
+[sudo] npm install -g generator-lg
 ```
 
 Then generate your new project:
@@ -20,9 +20,7 @@ Then generate your new project:
 ```bash
 yo lg
 ```
-```
 目录生成成功后，请阅读：[README.md](https://github.com/liubiao0810/generator-lg/blob/dev/generators/app/templates/README.md)
-```
 ## Getting To Know Yeoman
 
  * Yeoman has a heart of gold.
