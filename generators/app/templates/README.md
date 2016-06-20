@@ -46,11 +46,10 @@ mockLocal: 1;
 // 远程服务地址以及可能需要的cookie配置
 ```
     remote: {
-    	// 可以是具体ip地址\具体域名地址
-        path: 'http://10.10.0.12:8080',         		headers: {
-        	// 登陆的用户名 ==
-            cookie: 'cookie_user_key=xxxx'
-       }
+        path: '10.100.12:8080', // 可以是具体ip地址\具体域名地址
+        headers: {
+            cookie: 'cookie_user_key=xxxx' // 登陆的用户名==
+        }
     }
 ```
 ###### ajax请求
