@@ -1,13 +1,13 @@
-# generator-lg 脚手架（beta版）
+# generator-lg 脚手架
 命名：前朱雀为陵光,后玄武为执名,左青龙为孟章,右白虎为咸池
 第一组开源项目统一用`lg(陵光，朱雀)`命名 （一个l  3个g  lingguang  名字而来）
 
 
 ## Vue.js + Webpack + gulp
 
-	1.打包工具：webpack
-	2.自动化构建工具：gulp
-	3.SPA框架：vue
+    1.打包工具：webpack
+    2.自动化构建工具：gulp
+    3.SPA框架：vue
 ## 步骤
     
     1.进入当前目录;
@@ -22,8 +22,11 @@
 
 
 ## 关于配置
+#### 全局通用配置
+gulpfile.js > config > index.js
+具体配置请进入目录查看
 ##### 路由配置：
-> src > app > config-router.js
+src > app > config-router.js
 
 ```javascript
 router.map({
@@ -35,12 +38,22 @@ router.map({
 });
 ```
 这里面添加需要的路由配置;
-##### 本地mock：
- gulpfile.js > tasks > server.js > 
+##### 本地mock/远程服务mock：
+ gulpfile.js > config > server.js > 
 修改： 
 // 本地模拟数据和远程服务器数据切换, 1:本地   0:远程服务器
-var mockLocal = 1;
-
+mockLocal: 1;
+// 远程服务地址以及可能需要的cookie配置
+```
+    remote: {
+    	// 可以是具体ip地址\具体域名地址
+        path: 'http://10.10.0.12:8080',         		headers: {
+        	// 登陆的用户名 ==
+            cookie: 'cookie_user_key=xxxx'
+       }
+    }
+```
+###### ajax请求
 get请求：src > mock > GET > 建立对应地址的文件夹，最深层文件夹里新建：index.json   json文件就是写要mock的数据
 对于post请求，同上...
 todo...

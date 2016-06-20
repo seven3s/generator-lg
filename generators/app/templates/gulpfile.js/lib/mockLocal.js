@@ -6,6 +6,8 @@
  */
 var fs = require('fs');
 var chalk = require('chalk');
+var _ = require('lodash');
+var config = require('../config/server');
 module.exports = {
 
     /**
@@ -13,16 +15,28 @@ module.exports = {
      *
      * @return {type} description
      */
-    mockLocal: function (req, res) {
-        var xredWidth = req.headers['x-requested-with'];
-        if (xredWidth === 'XMLHttpRequest') {
-            var config = require('../tasks/');
-            var base = config.root;
-            var url = base + '/mock/' + req.method + req.url + '/index.json';
-            var data = fs.readFileSync(url);
-            console.log('本地模拟数据...:' + chalk.green(url));
-            res.write(data);
-            res.end();
-        }
+    mockLocal: function(req, res) {
+        var config = require('../config');
+        var base = config.root;
+        var url = base + '/mock/' + req.method + req.url + '/index.json';
+        var data = fs.readFileSync(url);
+        console.log('本地mock数据:' + chalk.green(url));
+        res.write(data);
+        res.end();
+    },
+
+    /**
+     * mockRemote 远程服务器
+     *
+     */
+    mockRemote: function(req, res) {
+        httpProxy = require('http-proxy');
+        var base = config.remote.path;
+        var proxy = httpProxy.createProxyServer({
+            target: base
+        });
+        console.log(chalk.yellow('proxy- URL:') + chalk.green(base + req.url));
+        req.headers = _.assign(req.headers, config.remote.headers);
+        proxy.web(req, res);
     }
-}
+};

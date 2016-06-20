@@ -7,7 +7,7 @@
 var gulp = require('gulp');
 var path = require('path');
 var watch = require('gulp-watch');
-var config = require('./');
+var config = require('../config');
 gulp.task('watch', function () {
     var file = config.sourceDirectory + '/**/*';
     watch(file, function () {
