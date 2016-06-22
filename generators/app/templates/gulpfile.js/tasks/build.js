@@ -8,5 +8,5 @@ var gulp = require('gulp');
 var gulpSequence = require('gulp-sequence');
 
 gulp.task('build', function (cb) {
-    gulpSequence('clean', ['html'], 'webpack', 'watch', cb);
+    gulpSequence('clean', ['html'], ['webpack', 'copy'], 'watch', cb);
 });
