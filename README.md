@@ -46,6 +46,7 @@ yo lg
                 |── GET/
                 └── POST/
 
+#具体请阅读 [wiki](https://github.com/liubiao0810/generator-lg/wiki)
 ## 感谢这些开源项目
 
 1. [gulp](http://gulpjs.com/)
