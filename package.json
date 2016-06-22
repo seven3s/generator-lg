@@ -1,6 +1,6 @@
 {
   "name": "generator-lg",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "generator-lg",
   "homepage": "https://github.com/liubiao0810/generator-lg",
   "author": {
@@ -19,6 +19,7 @@
   ],
   "dependencies": {
     "chalk": "^1.1.3",
+    "git-config": "0.0.7",
     "yeoman-generator": "^0.20.3"
   },
   "repository": "https://github.com/liubiao0810/generator-lg",
