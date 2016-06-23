@@ -4,8 +4,8 @@
  * @Version:   V0.0.1
  * @Date:      2016-06-22 11:10:29
  */
-var config       = require('../config/copy');
-var gulp         = require('gulp');
+var config = require('../config/copy');
+var gulp   = require('gulp');
 
 gulp.task('copy', function () {
     return gulp.src(config.jQSrc).pipe(gulp.dest(config.jQDest));

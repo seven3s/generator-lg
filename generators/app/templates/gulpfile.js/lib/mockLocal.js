@@ -4,10 +4,10 @@
  * @Version:   V0.0.1
  * @Date:      2016-06-16 19:08:20
  */
-var fs = require('fs');
-var chalk = require('chalk');
-var _ = require('lodash');
-var config = require('../config/server');
+var fs         = require('fs');
+var chalk      = require('chalk');
+var _          = require('lodash');
+var config     = require('../config/server');
 module.exports = {
 
     /**
@@ -17,9 +17,9 @@ module.exports = {
      */
     mockLocal: function(req, res) {
         var config = require('../config');
-        var base = config.root;
-        var url = base + '/mock/' + req.method + req.url + '/index.json';
-        var data = fs.readFileSync(url);
+        var base   = config.root;
+        var url    = base + '/mock/' + req.method + req.url + '/index.json';
+        var data   = fs.readFileSync(url);
         console.log('本地mock数据:' + chalk.green(url));
         res.write(data);
         res.end();
@@ -31,7 +31,7 @@ module.exports = {
      */
     mockRemote: function(req, res) {
         httpProxy = require('http-proxy');
-        var base = config.remote.path;
+        var base  = config.remote.path;
         var proxy = httpProxy.createProxyServer({
             target: base
         });

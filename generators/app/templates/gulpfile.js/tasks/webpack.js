@@ -4,8 +4,8 @@
  * @Version:   V0.0.1
  * @Date:      2016-05-31 20:00:56
  */
-var gulp = require('gulp');
-var webpack = require('webpack');
+var gulp          = require('gulp');
+var webpack       = require('webpack');
 var webpackConfig = require('../../webpack.config.js');
 gulp.task('webpack', function (callback) {
 var myConfig = Object.create(webpackConfig);

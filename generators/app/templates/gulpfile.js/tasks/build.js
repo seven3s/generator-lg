@@ -4,7 +4,7 @@
  * @Version:   V0.0.1
  * @Date:      2016-05-31 19:33:24
  */
-var gulp = require('gulp');
+var gulp         = require('gulp');
 var gulpSequence = require('gulp-sequence');
 
 gulp.task('build', function (cb) {
