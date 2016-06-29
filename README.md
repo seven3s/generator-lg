@@ -1,4 +1,7 @@
 # generator-lg [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+##增加新功能列表：
+
+        ├── [mockjs](http://mockjs.com/examples.html#)
 
 # generator-lg 脚手架
 命名：前朱雀为陵光,后玄武为执名,左青龙为孟章,右白虎为咸池

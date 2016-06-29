@@ -39,6 +39,8 @@ router.map({
 ```
 这里面添加需要的路由配置;
 ##### 本地mock/远程服务mock：
+本地mock已集成 [mockjs](http://mockjs.com/examples.html#)
+
  gulpfile.js > config > server.js > 
 修改： 
 // 本地模拟数据和远程服务器数据切换, 1:本地   0:远程服务器

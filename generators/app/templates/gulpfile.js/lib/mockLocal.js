@@ -16,11 +16,21 @@ module.exports = {
      * @return {type} description
      */
     mockLocal: function(req, res) {
+        // var config = require('../config');
+        // var base   = config.root;
+        // var url    = base + '/mock/' + req.method + req.url + '/index.json';
+        // var data   = fs.readFileSync(url);
+        // console.log('本地mock数据:' + chalk.green(url));
+        // res.write(data);
+        // res.end();
         var config = require('../config');
         var base   = config.root;
         var url    = base + '/mock/' + req.method + req.url + '/index.json';
-        var data   = fs.readFileSync(url);
         console.log('本地mock数据:' + chalk.green(url));
+        var json   = JSON.parse(fs.readFileSync(url, 'utf-8'));
+        var Mock = require('mockjs');
+        var data = Mock.mock(json);
+        data = JSON.stringify(data, null, 4);
         res.write(data);
         res.end();
     },
